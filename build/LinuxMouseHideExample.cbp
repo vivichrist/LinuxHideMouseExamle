@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LinuxMouseHideExample" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/LinuxMouseHideExample" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="/mnt/kreotem/Haxe/CodeKore/Deployment" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/LinuxMouseHideExample" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="/mnt/kreotem/Haxe/CodeKore/Deployment" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DKORE_G1" />
+			<Add option="-DKORE_G2" />
+			<Add option="-DKORE_G3" />
+			<Add option="-DKORE_A1" />
+			<Add option="-DKORE_A2" />
+			<Add option="-DKORE_LINUX" />
+			<Add option="-DKORE_OPENGL" />
+			<Add option="-DKORE_POSIX" />
+			<Add option="-DKORE_G4" />
+			<Add option="-DKORE_G5" />
+			<Add option="-DKORE_G5ONG4" />
+			<Add option="-DKORE_A3" />
+			<Add directory="/mnt/kreotem/Kore/Sources" />
+			<Add directory="/mnt/kreotem/Kore/Backends/System/Linux/Sources" />
+			<Add directory="/mnt/kreotem/Kore/Backends/System/POSIX/Sources" />
+			<Add directory="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources" />
+			<Add directory="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources" />
+			<Add directory="/mnt/kreotem/Kore/Backends/Audio3/A3onA2/Sources" />
+		</Compiler>
+		<Linker>
+			<Add option="-pthread" />
+			<Add option="-static-libgcc" />
+			<Add option="-static-libstdc++" />
+			<Add option="-Wl,-rpath,." />
+			<Add library="asound" />
+			<Add library="dl" />
+			<Add library="GL" />
+			<Add library="X11" />
+			<Add library="Xinerama" />
+		</Linker>
+		<Unit filename="/mnt/kreotem/Haxe/CodeKore/Sources/Camera.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Haxe/CodeKore/Sources/Main.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Haxe/CodeKore/Sources/MeshObject.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Haxe/CodeKore/Sources/ObjLoader.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Haxe/CodeKore/Sources/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Audio3/A3onA2/Sources/Kore/Audio.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Audio3/A3onA2/Sources/Kore/TextToSpeech.winrt.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Audio3/A3onA2/Sources/Kore/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/GL/eglew.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/GL/glew.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/GL/glew.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/GL/glxew.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/GL/wglew.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/ComputeImpl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/ComputeImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/GraphicsImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/IndexBufferImpl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/IndexBufferImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/OpenGL.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/OpenGL.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/OpenGLWindow.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/OpenGLWindow.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/PipelineStateImpl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/PipelineStateImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/RenderTargetImpl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/RenderTargetImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/ShaderImpl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/ShaderImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/ShaderStorageBufferImpl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/ShaderStorageBufferImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/TextureArrayImpl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/TextureArrayImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/TextureImpl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/TextureImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/VertexBufferImpl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/VertexBufferImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/VrInterface.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/ogl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics4/OpenGL/Sources/Kore/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/CommandList5Impl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/CommandList5Impl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/ConstantBuffer5Impl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/ConstantBuffer5Impl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/G5onG4.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/G5onG4.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/Graphics5Impl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/IndexBuffer5Impl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/IndexBuffer5Impl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/PipelineState5Impl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/PipelineState5Impl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/RenderTarget5Impl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/RenderTarget5Impl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/Shader5Impl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/Shader5Impl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/Texture5Impl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/Texture5Impl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/VertexBuffer5Impl.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/VertexBuffer5Impl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/Graphics5/G5onG4/Sources/Kore/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Display.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/DisplayData.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Display_XRandr.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Display_Xinerama.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Display_old.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Linux.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Sound.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/System.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Video.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/VideoSoundStream.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Window.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/WindowData.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Input/Gamepad.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Input/Gamepad.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/Linux/Sources/Kore/Input/Mouse.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/POSIX/Sources/Kore/Event.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/POSIX/Sources/Kore/EventImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/POSIX/Sources/Kore/Mutex.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/POSIX/Sources/Kore/MutexImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/POSIX/Sources/Kore/Semaphore.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/POSIX/Sources/Kore/SemaphoreImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/POSIX/Sources/Kore/Thread.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/POSIX/Sources/Kore/ThreadLocal.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/POSIX/Sources/Kore/ThreadLocalImpl.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Backends/System/POSIX/Sources/Kore/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/C/Kore/Error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/C/Kore/Error.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/C/Kore/Log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/C/Kore/Log.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/C/Kore/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/CodeStyle.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Display.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Error.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Error.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/ErrorArgs.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Log.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Log.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/LogArgs.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/System.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/System.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Window.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio1/Audio.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio1/Audio.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio1/Sound.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio1/Sound.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio1/SoundStream.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio1/SoundStream.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio1/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio1/stb_vorbis.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio2/Audio.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio2/Audio.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio2/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio3/Audio.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio3/Audio.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio3/TextToSpeech.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Audio3/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Compute/Compute.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics1/Color.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics1/Color.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics1/Graphics.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics1/Graphics.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics1/Image.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics1/Image.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics1/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics1/stb_image.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics2/Graphics.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics2/Graphics.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics2/Kravur.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics2/Kravur.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics2/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics3/Graphics.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics3/Graphics.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics3/Light.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics3/Texture.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics3/Texture.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics3/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/Graphics.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/Graphics.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/PipelineState.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/PipelineState.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/Shader.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/Texture.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/Texture.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/TextureArray.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/TextureArray.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/VertexStructure.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics4/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/CommandList.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/CommandList.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/ConstantBuffer.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/ConstantBuffer.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/Graphics.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/Graphics.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/PipelineState.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/PipelineState.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/RayTrace.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/Shader.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/Texture.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/Texture.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/VertexStructure.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Graphics5/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/BufferReader.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/BufferReader.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/FileReader.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/FileReader.winrt.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/FileWriter.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/FileWriter.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/Reader.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/Reader.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/Writer.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/Writer.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/lz4/lz4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/lz4/lz4.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/lz4/lz4frame.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/lz4/lz4frame.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/lz4/lz4frame_static.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/lz4/lz4hc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/lz4/lz4hc.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/lz4/lz4opt.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/lz4/xxhash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/IO/lz4/xxhash.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Gamepad.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Gamepad.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Keyboard.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Keyboard.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Mouse.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Mouse.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Pen.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Pen.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Sensor.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Sensor.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Surface.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/Surface.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Input/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Math/Core.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Math/Core.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Math/Matrix.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Math/Quaternion.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Math/Quaternion.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Math/Random.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Math/Random.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Math/Vector.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Math/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Network/Connection.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Network/Connection.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Network/Http.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Network/Http.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Network/Socket.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Network/Socket.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Network/pch.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Simd/float32x4.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Threads/Event.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Threads/Mutex.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Threads/Semaphore.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Threads/Thread.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Threads/ThreadLocal.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Vr/CameraImage.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Vr/CameraImage.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Vr/SensorState.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Vr/SensorState.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Vr/VrInterface.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Vr/VrPose.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Vr/VrPose.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Vr/VrPoseState.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Vr/VrPoseState.h">
+		</Unit>
+		<Unit filename="/mnt/kreotem/Kore/Sources/Kore/Vr/pch.h">
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
